@@ -8,11 +8,11 @@ namespace Triangle.Tests
     public class TriangleTests
     {
 
-        //{null, null, null}
+        //{}
         [TestMethod()]
         public void AllNullTest()
         {
-            var args = new string[] { null, null, null };
+            var args = new string[] { };
 
             int result; //結果を格納する変数
             bool wasThrown = false;
@@ -38,11 +38,11 @@ namespace Triangle.Tests
             Assert.IsTrue(wasThrown);
         }
 
-        //{6, null, null}
+        //{6}
         [TestMethod()]
         public void Null2Test()
         {
-            var args = new string[] { "6", null, null };
+            var args = new string[] { "6" };
 
             int result; //結果を格納する変数
             bool wasThrown = false;
@@ -68,11 +68,11 @@ namespace Triangle.Tests
             Assert.IsTrue(wasThrown);
         }
 
-        //{6, 6, null}
+        //{6, 6}
         [TestMethod()]
         public void Null1Test()
         {
-            var args = new string[] { "6", "6", null };
+            var args = new string[] { "6", "6" };
 
             int result; //結果を格納する変数
             bool wasThrown = false;
@@ -97,7 +97,7 @@ namespace Triangle.Tests
 
             Assert.IsTrue(wasThrown);
         }
-        
+
         //{0, 0, 0}
         [TestMethod()]
         public void AllZeroTest()
@@ -217,7 +217,7 @@ namespace Triangle.Tests
 
             Assert.IsTrue(wasThrown);
         }
-        
+
         //{-1, -1, -1}
         [TestMethod()]
         public void AllMinusTest()
